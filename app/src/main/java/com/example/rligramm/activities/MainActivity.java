@@ -60,6 +60,8 @@ public class MainActivity extends BaseActivity implements ConversationListener {
     private void setListeners() {
         binding.imageSignOut.setOnClickListener(v -> signOut());
         binding.fabNewChat.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), UsersActivity.class)));
+        binding.homeNavigateButton.setOnClickListener((view)->Navigate(HomeActivity.class));
+        binding.mapNavigateButton.setOnClickListener((view -> Navigate(MapActivity.class)));
     }
 
     private void loadUserDetails() {
@@ -158,6 +160,12 @@ public class MainActivity extends BaseActivity implements ConversationListener {
                     finish();
                 })
                 .addOnFailureListener(e -> showToast("Unable to sign out"));
+    }
+
+    private void Navigate(Class page){
+        Intent intent = new Intent(getApplicationContext(), page);
+        startActivity(intent);
+        finish();
     }
 
     @Override
