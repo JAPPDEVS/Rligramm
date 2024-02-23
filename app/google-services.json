@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "380106139116",
+    "project_id": "rligramm",
+    "storage_bucket": "rligramm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380106139116:android:7923c529d98ef000680cc9",
+        "android_client_info": {
+          "package_name": "com.example.rligramm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDy71444AtneiGli28jOUyMWo8Hbyi15Pc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
